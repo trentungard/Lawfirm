@@ -1,5 +1,5 @@
 .nav-container{
-    background-color: #162146;
+    background-image: linear-gradient(to bottom right, #162146, #1e2c60);
     color: white;
 }
 
@@ -31,3 +31,10 @@
 .nav-container ul{ 
     list-style-type: none;
 }
+
+.main-body{
+    background-color: #efefef;
+}
+
+
+
