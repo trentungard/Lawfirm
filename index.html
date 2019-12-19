@@ -5,105 +5,191 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <link href="style.css" rel="stylesheet"
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/android-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Callahan Lovecchio Law</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Merriweather|Gupter|Sulpher+Point&display=swap');
+    </style> 
 
 </head>
 
-<body>
+<body style="margin: 0;"> <!--Set margins to 0 eventually-->
     <div class="body-container"> <!--Start wrapper div-->
         <header>
-            <div class="nav-container"> <!--Nav Wrapper-->
-                <img src="https://via.placeholder.com/150" alt="Lawfirm Logo" 
-                title="The logo of Callahan Lovecchio Law">
-                <h1>Callahan Lovecchio Law</h1> 
-                    <p>Slogan goes here</p>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#practice">Areas of Practice</a></li>
-                        <li><a href="#team">Meet our Team</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                    </ul>
-                </nav>
+                <div class="nav-container"> <!--Nav Wrapper--> 
+                    <div class="name-info">
+                        <h1 style="margin-left: 2%; align-self: center;">Callahan Lovecchio Law</h1> 
+                    </div>
+                    <div class="nav-list">
+                        <nav>
+                            <ul>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#practice">Areas of Practice</a></li>
+                                <li><a href="#team">Meet our Team</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div  class="nav-logo" style="opacity: 0.7;">
+                        <img src="img/RCCL_3c.png" height="150px;" width="300px;" alt="Lawfirm Logo" 
+                        title="The logo of Callahan Lovecchio Law" style="margin-top: 4%;"> 
+                    </div>
+                </div>
             </div>
         </header>
         <main>
             <div class="main-body"> <!--Body Wrapper-->
-                <section id="about">
-                    <h2>About Us</h2>
-                        <p>This is text that I will use throughout the website as a placeholder, 
+                <section id="about" class="about-wrapper">
+                    <div>
+                        <h2 align="center" style="color: #01161e;">About Us</h2>
+                    </div>
+                    <div>
+                        <p class="about-text">This is text that I will use throughout the website as a placeholder, 
                     until I have the biographies and summaries that they want on the website, and 
                     can use those instead. I am trying to make this as drawn out as possible, 
                     so that I have some idea of the scale that the website will be once all is said and done.
                         </p>
+                    </div>
                 </section>
-                <section id="practice">
-                    <h2>Areas of Practice</h2>
+
+                <div class="bottom-borders"></div>
+
+                <section id="practice" class="practice-wrapper">
+                    <div class="practice-areas">
+                        <h2 align="center">Areas of Practice</h2>
+                    </div>
+                    <div class="practice-emblems">
+                        <img src="https://via.placeholder.com/150">
+                        <img src="https://via.placeholder.com/150">
+                    </div>
+                    <div class="practice-list">
                         <ul>
-                            <li><strong>Criminal Defense</strong></li>
+                            <li style="padding-right: 1%; border-right: 2px black solid;"><strong>Criminal Defense</strong></li>
                             <li><strong>Workers Compensation</strong></li>
-                            <li>Employment Law</li>
-                            <li>Family Law</li>
-                            <li>Landlord Tenant Law</li>
                         </ul>
+                    </div>
+                    <div class="practice-list-2">
+                        <ul>
+                            <li style="padding-right: 1%; border-right: 2px black solid;">Employment Law</li>
+                            <li style="padding-right: 1%; border-right: 2px black solid;">Family Law</li>
+                            <li>Landlord Tenant Law</li>
+                        </ul>  
+                    </div>
+                    <div class="practice-more">
                         <p>This is text that I will use throughout the website as a placeholder, 
                         until I have the biographies and summaries that they want on the website, and 
                         can use those instead. I am trying to make this as drawn out as possible, 
                         so that I have some idea of the scale that the website will be once all is said and done.
                         </p>
+                    </div>
                 </section>
                 <section id="team">
-                    <div style="background-color: #162146; color: white;" class="team-colors">
-                        <h2>Meet Our Team</h2>
-                            <img src="https://via.placeholder.com/150" alt="Chris Lovecchio Picture" 
-                            title="A photo of Chris Lovecchio"></img>
-                            <img src="https://via.placeholder.com/150" alt="Dick Callahan Picture" 
-                            title="A photo of Dick Callahan"></img>
-                            <img src="https://via.placeholder.com/150" alt="Matthew Diemer Picture" 
-                            title="A photo of Matthew Diemer"></img>
+                    <div class="team">
+                        <div class="team-text">
+                            <h2 style="color: #efefef;">Meet Our Team</h2>
+                        </div>
+                            <div> 
+                                <img src="https://via.placeholder.com/150" height="150" width="150" alt="Chris Lovecchio Picture" 
+                                title="A photo of Chris Lovecchio" class="team-image"></img>
+                            </div>
+                            <div>
+                                <img src="https://via.placeholder.com/150" alt="Dick Callahan Picture" 
+                                title="A photo of Dick Callahan" class="team-image"></img>
+                            </div>
+                            <div>
+                                <img src="https://via.placeholder.com/150" alt="Matthew Diemer Picture" 
+                                title="A photo of Matthew Diemer" class="team-image"></img>
+                            </div>
                     </div>
-                        <h3>Chris Lovecchio</h3>
-                            <p>Lawyerly Title</p>
-                            <p>Chris's summary will go here, and again I am trying hard to make
-                                this long and drawn out so that I can get a good idea of how 
-                                large the website will be. The funny part is that I don't think
-                                Chris will have a long summary so this may actually be accurate.
-                            </p>
-
-                        <h3>Dick Callahan</h3>
-                            <p>Lawerly Title</p>
-                            <p>I actually don't even know dick, so I coulddn't write my
-                                own summary for him, even if I wanted to. He may be a man of many
-                                words, or he may be a man of few words. How am I to know?
-                                There is no way for me to know, unfortunately, but the law of averages
-                                states that he is probably a man of medium words, so here is a medium
-                                paragraph to go along with that</p> 
-
-                        <h3>Matthew Diemer</h3>
-                            <p>Paralegel</p>
-                            <p>This will be Matts biography and I am sure it will be just as crazy as he is</p>
+                        <div class="team-names">
+                            <div>
+                                <h3>Chris Lovecchio</h3>
+                                    <p>Lawyerly Title</p>
+                                    <p>Chris and his family have had their
+                                        roots within the Williamsport Area 
+                                        and Central Pennsylvania region for 
+                                        four decades. He graduated from Bucknell 
+                                        University in Lewisburg, PA and then 
+                                        received his Juris Doctorate from the 
+                                        Widener University School of Law in 
+                                        Harrisburg, PA.  Chris has nearly 
+                                        twenty-years of experience as a passionate and skilled litigator in nearly every county of the Commonwealth, focusing primarily in the areas of Criminal Defense at both the state and federal level, Civil Law, and Employment Law including unemployment and workers’ compensation, wrongful termination, and workplace discrimination. Prior to joining this firm, Chris spent the first 18 years of his career with the Williamsport firm of Campana, Hoffa, Morrone & Lovecchio. As an attorney Chris has received multiple community and pro bono awards and takes great pride in his personal commitment to always being available to his clients in their times of need, and in his unmatched passion and drive to defend and advocate on their behalf.
+                                        Chris is an avid soccer fan and staunch supporter of the Chelsea Football Club of the English Premier League. He has interjected his love of the sport within the Williamsport and surrounding communities as well, holding the positions of Assistant Coach and Head Coach for both the Williamsport and Loyalsock High School soccer teams. He has also been a volunteer coach with both the Roni’s Soccer Club and the AYSO soccer program. Above all else, Chris takes great pride in his immediate and extended family. He has three children and currently resides in Williamsport with his wife, Bradi. 
+                                    </p>
+                            </div>
+                            <div>
+                                <h3>Dick Callahan</h3>
+                                    <p>Lawyerly Title</p>
+                                    <p>Dick is a lifelong resident of the Williamsport Area. He graduated from the former Saint Joseph Catholic High School in 1966 and attended the Pennsylvania State University where he majored in Economics and Finance, and remains and active and passionate PSU Alumni. Dick received his Juris Doctorate from the Villanova University School of Law in 1974. Upon graduating from law school, Dick returned to Williamsport and began his practice with the former Greevy, Knittle, and Mitchell law firm where he focused on Insurance Defense and Workers’ Compensation. In 1980 he co-founded the former firm of Miele and Callahan with his dear friend Anthony Miele, Esquire. Most recently, Dick has been a founding partner of our firm, Callahan Lovecchio (formerly Callahan Gardner Law Office).
+                                            Dick has spent nearly every day of his more than 45 year career fighting for injured workers, and has built a strong reputation as one of the best Workers’ Compensation attorneys in the area both in and out of the courtroom. He also focuses his practice on Family Law issues including matters of custody, support, and divorce, and has practiced within every county of the Commonwealth. 
+                                    </p> 
+                            </div>
+                            <div>
+                                <h3>Matthew Diemer</h3>
+                                    <p>Paralegel</p>
+                                    <p>Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph Placeholder paragraph 
+                                    </p>
+                            </div>
+                        </div>
                     </section>
-                    <section id="contact"> 
-                        <h2>Contact Us</h2>
-                            <p><strong> Email:</strong> <a href="mailto:contact@callahanlovecchiolaw.com?subject=Consultation">contact@callahanlovecchiolaw.com</a></p>
-                            <p><strong>Phone:</strong> (570)555-5555</p>
-                            <address>
-                                <strong>Address:</strong><br>
-                                Callahan Lovecchio Law<br>
-                                211 W 4th Street<br>
-                                Williamsport, Pennsylvania 17701
-                            </address>
-                    </section> 
+
+                    <div class="bottom-borders"></div>
+                    
+                        <section id="contact">
+                            <div class="contact">
+                                <div class="contact-head">
+                                    <h2 align="center">Contact Us</h2>
+                                </div>
+                                <div class="contact-elements">
+                                    <p><strong> Email:</strong><a href="mailto:contact@callahanlovecchiolaw.com?subject=Consultation">contact@callahanlovecchiolaw.com</a></p>
+                                </div>
+                                <div class="contact-elements">
+                                    <p><strong>Phone:</strong><a href="tel: 5705555555"> (570)555-5555</a></p>
+                                </div>
+                                <div class="contact-elements"> 
+                                    <address style="padding-top: 15px;">
+                                        <strong>Address:</strong><br>
+                                        Callahan Lovecchio Law<br>
+                                        211 W 4th Street<br>
+                                        Williamsport, Pennsylvania 17701
+                                    </address>
+                                </div>
+                                <div class="contact-consultation">
+                                    <h3>Call us now for a free consultation!</h3>
+                                </div>
+                            </div>
+                        </section>
+                    <aside id="testimonials">
+                            <div class="bottom-borders" style="margin-top: 10%;"></div>
+                            <div class="testimonials">
+                                <h2 align="center">Testimonials</h2>
+                                    <q>this is one testimonial from a happy customer, this will help our SEO</q><br>
+                                    <q>this is one testimonial from a happy customer, this will help our SEO</q><br>
+                                    <q>this is one testimonial from a happy customer, this will help our SEO</q>
+                            </div>
+                        </aside>
             </div>
         </main>
-            <aside id="testimonials">
-                <h2>Testimonials</h2>
-                        <q>this is one testimonial from a happy customer, this will help our SEO</q>
-                        <q>this is one testimonial from a happy customer, this will help our SEO</q>
-                        <q>this is one testimonial from a happy customer, this will help our SEO</q>
-            </aside>    
+   
         <footer>
             <div class="footer-container"> <!-- Footer -->
                 <nav>
@@ -113,7 +199,7 @@
                         </ul>
                     <a href="#">Return to top</a>
                 </nav>
-                    <span>
+                    <div>
                         <p>&copy; Callahan Lovecchio Law</p>
                         <p>The information on this website is for general 
                         information purposes only. Nothing on this site 
@@ -122,10 +208,17 @@
                         and receipt or viewing does not constitute, an attorney-client 
                         relationship.</p>
                         <p>Developed by <a href="#">Trent Ungard</a></p>
-                    </span>
+                        </div>
             </div> 
         </footer>
      </div> <!--End wrapper div -->
 </body>
+
+<foot>
+
+
+</foot>
+
+
 
 </html>

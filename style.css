@@ -1,24 +1,58 @@
+h2{
+    font-size: 39px;
+    font-family: 'Merriweather', serif;
+    color: #01161e;
+}
+
 .nav-container{
-    background-image: linear-gradient(to bottom right, #162146, #1e2c60);
+    background-image: url(img/office1.jpeg);
+    background-size: cover;
     color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    border-radius: 10px;
+    height: 500px;
+    font-family: 'Gupter', serif;
+
+}
+
+.name-info{
+    text-align: center;
+    color: #efefef;
+    background-color: #01161e;
+    border-bottom:  #dce0e5 3px solid;
+    box-shadow: 0px 3px 5px black;
+}
+
+.nav-list{
+    background-color: #01161e;
+    box-shadow: 5px 3px 5px black;
+    border-bottom:  #dce0e5 3px solid;
+}
+
+.nav-list li{
+    display: inline-block;
+    margin: 2.5%;
+    margin-left: 3%;
 }
 
 .nav-container a:link {
     text-decoration: underline;
     color: white;
-    
 
 }
 
 .nav-container a:visited {
     text-decoration: none;
-    color: #08B2E3;
+    color: #dce0e5;
     
 }
 
 .nav-container a:hover{
     text-decoration: none;
     color: #2D7DD2;
+    background-color: black;
     
 }
 
@@ -28,13 +62,221 @@
     
 }
 
+.nav-container a:focus{
+    background-color: black;
+    color: white;
+}
+
 .nav-container ul{ 
     list-style-type: none;
 }
 
+.nav-list{
+    display: inline-block;
+}
+
+.nav-logo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 45%;
+    width: 25%;
+    margin-left: 37%;
+    margin-top: 7%;
+    display: block;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.nav-logo img{
+    display: flex;
+    margin: auto;
+}
+
 .main-body{
+    background-color: #efefef;
+    font-family: 'Sulpher Point', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+}
+.bottom-borders{
+    border-bottom: 1px solid grey;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
     background-color: #efefef;
 }
 
+.about-text{
+    text-indent: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
+.practice-wrapper{
+    display: inline-grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
+}
 
+.practice-item{
+
+}
+
+.practice-emblems{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    position: relative;
+    justify-self: center;
+    width: 66.75%;
+    text-align: center;
+}
+
+.practice-list{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: center;
+    display: inline-grid;
+    position: relative;
+    width: 40%;
+    font-size: 20px;
+    text-align: center
+}
+
+.practice-list ul li{
+    display: inline-block;
+}
+
+.practice-list-2{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    justify-self: center;
+    width: 40%;
+    margin-left: 0%;
+    font-size: 20px;
+}
+
+.practice-list-2 ul {
+    margin-left: 0; 
+     
+}
+
+.practice-list-2 ul li{
+    display: inline-block;  
+
+}
+
+.practice-text li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.practice-areas{
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.practice-more{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.team{
+    margin-top: 2%;
+    background-color: #01161e;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.team-image{
+    display: inline-block;
+    border-radius: 80px;
+}
+
+.team-text{
+    margin-top: -20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.team-names{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    justify-items: center;
+    text-align: center;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+    justify-items: center;
+    height: 200px;
+
+}
+
+.contact-head{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contact-elements{
+    grid-row-start: 2;
+}
+
+.contact-consultation{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-left: 12%;
+    margin-bottom: 5%;
+    border-bottom: #124559 2px solid;
+    border-top: #124559 2px solid;
+    margin-top: 7%;
+}
+
+aside{
+    background-color: #efefef;
+}
+
+.testimonials{
+    padding-bottom: 2%;
+}
+
+.testimonials q{
+    margin: 5%;
+    padding-top: 2%;
+}
+
+footer{
+    text-align: center;
+    background-color: #01161e;
+    color: white;
+    margin-bottom: -20px;
+    border-top: #dce0e5 2px solid;
+}
