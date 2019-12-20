@@ -1,58 +1,233 @@
+/* --->!!Element Selectors!!<---*/
+
+*{
+ 
+}
+
+header{
+    height: 67%;
+    width: 100%;
+    display: grid;
+    background-image: url(img/office1.jpeg);
+    background-size: 110% 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Gupter', serif;
+}
+h1{
+    font-size: 3vw;
+}
 h2{
-    font-size: 39px;
+    font-size: 3vw;
     font-family: 'Merriweather', serif;
     color: #01161e;
 }
 
-.nav-container{
-    background-image: url(img/office1.jpeg);
-    background-size: cover;
-    color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 80%;
-    border-radius: 10px;
-    height: 500px;
-    font-family: 'Gupter', serif;
+aside{
 
 }
 
-.name-info{
+footer{
+    text-align: center;
+    background-color: #01161e;
+    color: white;
+    margin-bottom: -20px;
+    border-top: #dce0e5 2px solid;
+}
+
+/* --->!!Class Selectors!!<---*/
+
+    /*!!Wrappers!!*/
+
+.nav-container{
+    
+
+}
+
+.main-body{
+    background-color: #efefef;
+    font-family: 'Sulpher Point', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    width: 90%;
+
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    width: 100%;
+}
+
+.team{
+    margin-top: 2%;
+    background-color: #01161e;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+    justify-items: center;
+    height: 200px;
+}
+
+
+    /*!!Children!!*/
+
+.nav{
+    display: grid;
     text-align: center;
     color: #efefef;
     background-color: #01161e;
     border-bottom:  #dce0e5 3px solid;
     box-shadow: 0px 3px 5px black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 70%;
+    width: 100%;
+    grid-template-columns: 20% 35% 45%;
 }
 
-.nav-list{
-    background-color: #01161e;
-    box-shadow: 5px 3px 5px black;
-    border-bottom:  #dce0e5 3px solid;
+.nav-part-1{
+    height: inherit;
+    width: 90%;
+    
+    
 }
 
-.nav-list li{
-    display: inline-block;
-    margin: 2.5%;
-    margin-left: 3%;
+.nav-part-2{
+    height: inherit;
+    width: 93%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
-.nav-container a:link {
-    text-decoration: underline;
+.nav-part-2 h1{
+    height: 40%;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-top: 8%;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    
+    
+}
+.nav-part-2 p{
+    height: 50%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: -4%;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.25vw;
+    color: grey;
+}
+
+.nav-part-3{
+    height: 50%;
+    width: 100%;
+    margin-top: 1%;
+    margin-left: -5%;
+}
+
+.nav-part-3 ul li{
+    font-size: 1.25vw;
+    margin-left: 0%;
+    height: 50%;
+    margin-top: 0%;
+}
+
+.nav-part-3-ext{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    margin-left: 0%;
+    height: 50%;
+    margin-top: 0%;
+}
+
+.nav-part-3 div{
+    display: grid;
+    margin-left: 0%;
+    width: 100%;
+    height: 50%;
+    margin-top: 0%;
+}
+
+.nav-part-3 div li{
+    column-span: 2;
+    margin: 10%;
+    margin-left: 0%;
+    height: 50%;
+    margin-top: 30%;
+
+}
+
+.nav-part-3 div li a{
+    width: 10%;
+    margin-left: 0%;
+    height: 50%;
+    margin-top: 6%;
+}
+
+.nav-back{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.nav-logo{
+    margin-left: 18.5%;
+    margin-top: 6.5%;
+}
+
+.nav-logo-back{
+    width: 50%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5%;
+    margin-left: 25%;
+    margin-top: 3%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nav a:link {
     color: white;
 
 }
 
-.nav-container a:visited {
+.nav a:visited {
     text-decoration: none;
     color: #dce0e5;
     
 }
 
-.nav-container a:hover{
+.nav a:hover{
     text-decoration: none;
-    color: #2D7DD2;
-    background-color: black;
+    color: grey;
+    font-size: 2vw;
     
 }
 
@@ -75,32 +250,9 @@ h2{
     display: inline-block;
 }
 
-.nav-logo{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    height: 45%;
-    width: 25%;
-    margin-left: 37%;
-    margin-top: 7%;
-    display: block;
-    position: relative;
-    background-color: white;
-    border-radius: 10px;
 
-}
+/*_____________________________________*/
 
-.nav-logo img{
-    display: flex;
-    margin: auto;
-}
-
-.main-body{
-    background-color: #efefef;
-    font-family: 'Sulpher Point', sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 0%;
-}
 .bottom-borders{
     border-bottom: 1px solid grey;
     width: 90%;
@@ -108,18 +260,16 @@ h2{
     margin-top: 2%;
 }
 
-.about-wrapper{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    background-color: #efefef;
-}
+/*_____________________________________*/
 
 .about-text{
     text-indent: 40px;
     margin-left: 5%;
     margin-right: 5%;
+    width: 90%;
 }
+
+/*_____________________________________*/
 
 .practice-wrapper{
     display: inline-grid;
@@ -198,17 +348,9 @@ h2{
     padding-left: 2%;
     padding-right: 2%;
 }
-.team{
-    margin-top: 2%;
-    background-color: #01161e;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30% 70%;
-    justify-items: center;
-    height: 250px;
-    border-radius: 10px;
-}
+
+/*_____________________________________*/
+
 
 .team-image{
     display: inline-block;
@@ -230,6 +372,8 @@ h2{
     text-align: center;
 }
 
+/*_____________________________________*/
+
 .contact{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -238,7 +382,6 @@ h2{
     margin-left: 5%;
     justify-items: center;
     height: 200px;
-
 }
 
 .contact-head{
@@ -260,9 +403,7 @@ h2{
     margin-top: 7%;
 }
 
-aside{
-    background-color: #efefef;
-}
+/*_____________________________________*/
 
 .testimonials{
     padding-bottom: 2%;
@@ -273,10 +414,3 @@ aside{
     padding-top: 2%;
 }
 
-footer{
-    text-align: center;
-    background-color: #01161e;
-    color: white;
-    margin-bottom: -20px;
-    border-top: #dce0e5 2px solid;
-}
