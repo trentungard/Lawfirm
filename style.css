@@ -1,11 +1,21 @@
-/* --->!!Element Selectors!!<---*/
 
-*{
- 
+h1{
+    font-size: 3vw;
 }
 
+h2{
+    font-size: 3vw;
+    font-family: 'Merriweather', serif;
+    color: #01161e;
+}
+
+p{
+    line-height: 130%;
+}
+
+/* Head*/
+
 header{
-    height: 67%;
     width: 100%;
     display: grid;
     background-image: url(img/office1.jpeg);
@@ -14,78 +24,9 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: 'Gupter', serif;
+    height: 70%;
 }
-h1{
-    font-size: 3vw;
-}
-h2{
-    font-size: 3vw;
-    font-family: 'Merriweather', serif;
-    color: #01161e;
-}
-
-aside{
-
-}
-
-footer{
-    text-align: center;
-    background-color: #01161e;
-    color: white;
-    margin-bottom: -20px;
-    border-top: #dce0e5 2px solid;
-}
-
-/* --->!!Class Selectors!!<---*/
-
-    /*!!Wrappers!!*/
-
-.nav-container{
-    
-
-}
-
-.main-body{
-    background-color: #efefef;
-    font-family: 'Sulpher Point', sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 0%;
-    width: 90%;
-
-}
-
-.about-wrapper{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    width: 100%;
-}
-
-.team{
-    margin-top: 2%;
-    background-color: #01161e;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30% 70%;
-    justify-items: center;
-    height: 250px;
-    border-radius: 10px;
-}
-
-.contact-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 90%;
-    margin-left: 5%;
-    justify-items: center;
-    height: 200px;
-}
-
-
-    /*!!Children!!*/
+    /* TOP NAV */
 
 .nav{
     display: grid;
@@ -104,8 +45,6 @@ footer{
 .nav-part-1{
     height: inherit;
     width: 90%;
-    
-    
 }
 
 .nav-part-2{
@@ -123,9 +62,8 @@ footer{
     padding-top: 8%;
     grid-row-start: 1;
     grid-row-end: 2; 
-    
-    
 }
+
 .nav-part-2 p{
     height: 50%;
     grid-row-start: 2;
@@ -184,35 +122,6 @@ footer{
     margin-top: 6%;
 }
 
-.nav-back{
-    width: 100%;
-    height: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-}
-
-.nav-logo{
-    margin-left: 18.5%;
-    margin-top: 6.5%;
-}
-
-.nav-logo-back{
-    width: 50%;
-    height: 70%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5%;
-    margin-left: 25%;
-    margin-top: 3%;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
 .nav a:link {
     color: white;
 
@@ -227,7 +136,7 @@ footer{
 .nav a:hover{
     text-decoration: none;
     color: grey;
-    font-size: 2vw;
+    font-size: 1.3vw;
     
 }
 
@@ -250,8 +159,50 @@ footer{
     display: inline-block;
 }
 
+    /* NAV BOTTOM*/
 
-/*_____________________________________*/
+.nav-back{
+    width: 100%;
+    height: 99%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.nav-logo{
+    margin-left: 18.5%;
+    margin-top: 6.5%;
+}
+
+.nav-logo-back{
+    width: 50%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-left: 10%;
+    justify-self: center;
+    align-self: center;
+}
+
+/* BODY SPECIFIC*/
+
+.main-body{
+    background-color: #efefef;
+    font-family: 'Sulpher Point', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    width: 90%;
+    font-size: 1.25vw;
+
+}
 
 .bottom-borders{
     border-bottom: 1px solid grey;
@@ -260,21 +211,33 @@ footer{
     margin-top: 2%;
 }
 
-/*_____________________________________*/
+
+/* ABOUT */
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    width: 100%;
+    font-size: 1.25vw;
+}
 
 .about-text{
-    text-indent: 40px;
+    height: 100%;
+    text-indent: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: -2%;
     width: 90%;
 }
 
-/*_____________________________________*/
+/* PRACTICE*/
 
 .practice-wrapper{
     display: inline-grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20%;
+    border: yellow 2px solid;
 }
 
 .practice-item{
@@ -290,6 +253,7 @@ footer{
     justify-self: center;
     width: 66.75%;
     text-align: center;
+    border: yellow 2px solid;
 }
 
 .practice-list{
@@ -302,11 +266,13 @@ footer{
     position: relative;
     width: 40%;
     font-size: 20px;
-    text-align: center
+    text-align: center;
+    border: yellow 2px solid;
 }
 
 .practice-list ul li{
     display: inline-block;
+    border: yellow 2px solid;
 }
 
 .practice-list-2{
@@ -318,26 +284,31 @@ footer{
     width: 40%;
     margin-left: 0%;
     font-size: 20px;
+    border: yellow 2px solid;
 }
 
 .practice-list-2 ul {
-    margin-left: 0; 
+    margin-left: 0;
+    border: yellow 2px solid;
      
 }
 
 .practice-list-2 ul li{
-    display: inline-block;  
+    display: inline-block;
+    border: yellow 2px solid;
 
 }
 
 .practice-text li{
     display: inline-block;
     list-style-type: none;
+    border: yellow 2px solid;
 }
 
 .practice-areas{
     grid-column-start: 1;
     grid-column-end: 6;
+    border: yellow 2px solid;
 }
 
 .practice-more{
@@ -347,32 +318,69 @@ footer{
     margin-right: 5%;
     padding-left: 2%;
     padding-right: 2%;
+    border: yellow 2px solid;
 }
 
-/*_____________________________________*/
+/*TEAM*/
 
+.team{
+
+}
+
+.team-top-1{
+    margin-top: 2%;
+    background-color: #01161e;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    justify-items: center;
+    height: 250px;
+    border-radius: 10px;
+}
 
 .team-image{
     display: inline-block;
     border-radius: 80px;
 }
 
-.team-text{
+.team-text-1{
     margin-top: -20px;
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
 }
 
-.team-names{
+.team-names-1{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 20% 80%;
     justify-items: center;
     text-align: center;
 }
 
-/*_____________________________________*/
+.team-abouts{
+    text-align: left;
+    margin: 3%;
+    text-indent: 5%;
+}
+
+.team-top-2{
+    height: 15vw;
+    width: 100%;
+}
+
+/* CONTACT */
+
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+    justify-items: center;
+    height: 200px;
+}
 
 .contact{
     display: grid;
@@ -403,7 +411,7 @@ footer{
     margin-top: 7%;
 }
 
-/*_____________________________________*/
+/*TESTIMONIALS*/
 
 .testimonials{
     padding-bottom: 2%;
@@ -414,3 +422,105 @@ footer{
     padding-top: 2%;
 }
 
+footer{
+    text-align: center;
+    background-color: #01161e;
+    color: white;
+    margin-bottom: -20px;
+    border-top: #dce0e5 2px solid;
+}
+
+/* MEDIA QUERIES*/
+
+@media(max-width: 600px) {
+
+    h1{
+        font-size: 4vw;
+    }
+
+    p{
+        font-size: 2.8vw;
+    }
+
+    h2{
+        font-size: 4vw;
+        font-family: 'Merriweather', serif;
+        color: #01161e;
+    }
+
+    header{
+        background-size: 110% 140%;
+        height: 300px;
+    }
+
+    .nav{
+        display: grid;
+        text-align: center;
+        color: #efefef;
+        background-color: #01161e;
+        border-bottom:  #dce0e5 3px solid;
+        box-shadow: 0px 3px 5px black;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 70%;
+        width: 100%;
+        grid-template-columns: 30% 70%;
+    }
+
+    .nav-part-1{
+        width: 110%;
+        display: none;
+    }
+
+    .nav-part-2{
+        width: 100%;
+    }
+
+    .nav-part-2 h1{
+        height: 40%;
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+        padding-top: 8%;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+
+    .nav-part-2 p{
+        font-size: 2vw;
+    }
+
+    .nav-part-3{
+        height: 50%;
+        width: 100%;
+        margin-top: 3.5%;
+    }
+    
+    .nav-part-3 ul li{
+        font-size: 2.5vw;
+    }
+    
+    .nav-part-3-ext{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        list-style: none;
+    }
+    
+    .nav-part-3 div{
+        display: grid;
+        width: 100%;
+    }
+
+    .nav-back{
+        margin-top: -5%;
+    }
+    
+    .nav-logo-back{
+        width: 50%;
+        height: 80%;
+        margin-top: 0%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    
+}
