@@ -237,7 +237,6 @@ header{
     display: inline-grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20%;
-    border: yellow 2px solid;
 }
 
 .practice-item{
@@ -253,7 +252,6 @@ header{
     justify-self: center;
     width: 66.75%;
     text-align: center;
-    border: yellow 2px solid;
 }
 
 .practice-list{
@@ -264,15 +262,13 @@ header{
     justify-self: center;
     display: inline-grid;
     position: relative;
-    width: 40%;
-    font-size: 20px;
+    width: 50%;
+    font-size: 1.5vw;
     text-align: center;
-    border: yellow 2px solid;
 }
 
 .practice-list ul li{
     display: inline-block;
-    border: yellow 2px solid;
 }
 
 .practice-list-2{
@@ -281,34 +277,30 @@ header{
     grid-row-start: 4;
     grid-row-end: 4;
     justify-self: center;
-    width: 40%;
+    text-align: center;
+    width: 50%;
     margin-left: 0%;
-    font-size: 20px;
-    border: yellow 2px solid;
+    font-size: 1.2vw;
 }
 
 .practice-list-2 ul {
     margin-left: 0;
-    border: yellow 2px solid;
      
 }
 
 .practice-list-2 ul li{
     display: inline-block;
-    border: yellow 2px solid;
 
 }
 
 .practice-text li{
     display: inline-block;
     list-style-type: none;
-    border: yellow 2px solid;
 }
 
 .practice-areas{
     grid-column-start: 1;
     grid-column-end: 6;
-    border: yellow 2px solid;
 }
 
 .practice-more{
@@ -318,7 +310,6 @@ header{
     margin-right: 5%;
     padding-left: 2%;
     padding-right: 2%;
-    border: yellow 2px solid;
 }
 
 /*TEAM*/
@@ -409,6 +400,7 @@ header{
     border-bottom: #124559 2px solid;
     border-top: #124559 2px solid;
     margin-top: 7%;
+    text-align: center;
 }
 
 /*TESTIMONIALS*/
@@ -420,6 +412,31 @@ header{
 .testimonials q{
     margin: 5%;
     padding-top: 2%;
+}
+
+/* FOOTER */
+.footer-facebook{
+    margin-left: -3%;
+}
+
+.footer-container ul{
+    margin-left: 0%;
+}
+
+.footer-container ul li{
+    list-style: none;
+}
+
+.footer-container a:visited{
+    color: #efefef;
+}
+
+.footer-container a:link{
+    color: #efefef;
+}
+
+.footer-container a:hover{
+    color: grey;
 }
 
 footer{
