@@ -5,12 +5,13 @@ h1{
 
 h2{
     font-size: 3vw;
-    font-family: 'Merriweather', serif;
+    font-family: 'Bitter', serif;
     color: #01161e;
 }
 
 p{
     line-height: 130%;
+    font-family: 'Bitter', serif;
 }
 
 /* Head*/
@@ -18,33 +19,39 @@ p{
 header{
     width: 100%;
     display: grid;
-    background-image: url(img/office1.jpeg);
-    background-size: 110% 100%;
+    background-image: url(img/bwoffice.jpg);
+    background-size: 100% 130%;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: 'Gupter', serif;
-    height: 70%;
+    font-family: 'Scope One', serif;
+    height: 130%;
 }
     /* TOP NAV */
+
+.nav-wrap{
+    height: 30vw;
+}
 
 .nav{
     display: grid;
     text-align: center;
     color: #efefef;
-    background-color: #01161e;
+    background-image: linear-gradient(to bottom, #001842, #001d51);
     border-bottom:  #dce0e5 3px solid;
     box-shadow: 0px 3px 5px black;
     grid-column-start: 1;
     grid-column-end: 4;
-    height: 70%;
+    height: 30%;
     width: 100%;
     grid-template-columns: 20% 35% 45%;
 }
 
+
 .nav-part-1{
     height: inherit;
     width: 90%;
+    margin-top: 5%;
 }
 
 .nav-part-2{
@@ -57,7 +64,7 @@ header{
 .nav-part-2 h1{
     height: 40%;
     width: 100%;
-    margin-top: 0%;
+    margin-top: 1%;
     margin-left: 0%;
     padding-top: 8%;
     grid-row-start: 1;
@@ -72,13 +79,13 @@ header{
     width: 80%;
     margin-left: 10%;
     font-size: 1.25vw;
-    color: grey;
+    color: rgba(170, 170, 170, 0.5);
 }
 
 .nav-part-3{
     height: 50%;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 0%;
     margin-left: -5%;
 }
 
@@ -112,7 +119,6 @@ header{
     margin-left: 0%;
     height: 50%;
     margin-top: 30%;
-
 }
 
 .nav-part-3 div li a{
@@ -120,6 +126,7 @@ header{
     margin-left: 0%;
     height: 50%;
     margin-top: 6%;
+    text-decoration: none;
 }
 
 .nav a:link {
@@ -133,9 +140,15 @@ header{
     
 }
 
+.nav li:hover{
+    background: white;
+    border-radius: 5px;
+    animation-delay: 500ms;
+    color: black;
+}
 .nav a:hover{
     text-decoration: none;
-    color: grey;
+    color: black;
     font-size: 1.3vw;
     
 }
@@ -179,7 +192,7 @@ header{
 
 .nav-logo-back{
     width: 50%;
-    height: 70%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0%;
     grid-column-start: 2;
@@ -201,7 +214,7 @@ header{
     margin-bottom: 0%;
     width: 90%;
     font-size: 1.25vw;
-
+    margin-top: 3%;
 }
 
 .bottom-borders{
@@ -320,13 +333,13 @@ header{
 
 .team-top-1{
     margin-top: 2%;
-    background-color: #01161e;
+    background-color: #001842;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30% 70%;
     justify-items: center;
-    height: 250px;
+    height: 18vw;
     border-radius: 10px;
 }
 
@@ -357,8 +370,17 @@ header{
 }
 
 .team-top-2{
+    background-color: #001842;
     height: 15vw;
     width: 100%;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+}
+
+.team-names-2{
+    text-align: center;
 }
 
 /* CONTACT */
@@ -370,7 +392,7 @@ header{
     width: 90%;
     margin-left: 5%;
     justify-items: center;
-    height: 200px;
+    height: 20vw;
 }
 
 .contact{
@@ -390,6 +412,20 @@ header{
 
 .contact-elements{
     grid-row-start: 2;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.contact-elements a:link{
+    color: darkslategray;
+}
+
+.contact-elements a:hover{
+    color: darkblue;
+}
+
+.contact-elements a:active{
+    color: #124559;
 }
 
 .contact-consultation{
@@ -441,7 +477,7 @@ header{
 
 footer{
     text-align: center;
-    background-color: #01161e;
+    background-color: black;
     color: white;
     margin-bottom: -20px;
     border-top: #dce0e5 2px solid;
@@ -479,7 +515,7 @@ footer{
         box-shadow: 0px 3px 5px black;
         grid-column-start: 1;
         grid-column-end: 4;
-        height: 70%;
+        height: 40%;
         width: 100%;
         grid-template-columns: 30% 70%;
     }
@@ -538,6 +574,10 @@ footer{
         margin-top: 0%;
         grid-column-start: 1;
         grid-column-end: 5;
+    }
+
+    .main-body{
+        margin-top: 25%;
     }
     
 }
