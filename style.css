@@ -143,9 +143,13 @@ header{
 .nav li:hover{
     background: white;
     border-radius: 5px;
-    animation-delay: 500ms;
+    transition: 1.0s;
     color: black;
 }
+.nav li a:hover{
+    color: black;
+}
+
 .nav a:hover{
     text-decoration: none;
     color: black;
@@ -325,6 +329,12 @@ header{
     padding-right: 2%;
 }
 
+.practice-emblems img{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 150px;
+}
+
 /*TEAM*/
 
 .team{
@@ -333,7 +343,7 @@ header{
 
 .team-top-1{
     margin-top: 2%;
-    background-color: #001842;
+    background-image: linear-gradient(to bottom right, #001842,midnightblue);
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -349,7 +359,7 @@ header{
 }
 
 .team-text-1{
-    margin-top: -20px;
+    margin-top: -1.5%;
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
@@ -361,16 +371,18 @@ header{
     grid-template-rows: 20% 80%;
     justify-items: center;
     text-align: center;
+    font-size: 2vw;
 }
 
 .team-abouts{
     text-align: left;
     margin: 3%;
     text-indent: 5%;
+    font-size: 1.25vw;
 }
 
 .team-top-2{
-    background-color: #001842;
+    background-image: linear-gradient(to bottom right, #001842, midnightblue);
     height: 15vw;
     width: 100%;
     border-radius: 15px;
@@ -381,6 +393,7 @@ header{
 
 .team-names-2{
     text-align: center;
+    font-size: 2vw;
 }
 
 /* CONTACT */
@@ -433,7 +446,7 @@ header{
     grid-column-end: 2;
     margin-left: 12%;
     margin-bottom: 5%;
-    border-bottom: #124559 2px solid;
+    border-bottom: #001842 2px solid;
     border-top: #124559 2px solid;
     margin-top: 7%;
     text-align: center;
@@ -479,7 +492,7 @@ footer{
     text-align: center;
     background-color: black;
     color: white;
-    margin-bottom: -20px;
+    margin-bottom: -4%;
     border-top: #dce0e5 2px solid;
 }
 
@@ -564,20 +577,129 @@ footer{
         width: 100%;
     }
 
-    .nav-back{
-        margin-top: -5%;
-    }
-    
-    .nav-logo-back{
-        width: 50%;
-        height: 80%;
-        margin-top: 0%;
-        grid-column-start: 1;
-        grid-column-end: 5;
+    .main-body{
+        margin-top: 12%;
     }
 
-    .main-body{
-        margin-top: 25%;
+    .practice-list{
+        margin-left: -5%;
+        font-size: 2.4vw;
+        text-align: center;
+        width: 70%;
+    }
+
+    .practice-list-2{
+        font-size: 2.1vw;
+        margin-left: -5%;
+        width: 70%;
+    }
+
+    .practice-emblems img{
+        width: 9vw;
+        height: 9vw;
+        border-radius: 150px;
+    } 
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 90%;
+        margin-left: 5%;
+        justify-items: center;
+        height: 50vw;
+    }
+
+    .contact-wrapper br{
+        display: none;
+    }
+
+    .contact{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        width: 90%;
+        margin-left: 0%;
+        justify-items: center;
+        
     }
     
+    .contact-head{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .email{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .phone{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        justify-self: left;
+    }
+
+    .address{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 2.2vw;
+    }
+
+    
+    .contact-elements{
+        text-align: left;
+    }
+    
+    .contact-elements a:link{
+        color: darkslategray;
+    }
+    
+    .contact-elements a:hover{
+        color: darkblue;
+    }
+    
+    .contact-elements a:active{
+        color: #124559;
+    }
+    
+    .contact-consultation{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        border-bottom: #001842 2px solid;
+        border-top: #124559 2px solid;
+        margin-top: 7%;
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    .footer-container ul li{
+        list-style: none;
+    }
+    
+    .footer-container a:visited{
+        color: #efefef;
+    }
+    
+    .footer-container a:link{
+        color: #efefef;
+    }
+    
+    .footer-container a:hover{
+        color: grey;
+    }
+    
+    footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin-bottom: -4%;
+        border-top: #dce0e5 2px solid;
+    }
 }
