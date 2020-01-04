@@ -566,7 +566,6 @@ footer{
 
     .about-wrapper{
         height: 100%;
-        border-bottom: 1px solid grey;
     }
     
     .about-text{
@@ -697,6 +696,10 @@ footer{
         color: grey;
     }
     
+    .bottom-borders{
+        display: none;
+    }
+
     footer{
         text-align: center;
         background-color: black;
