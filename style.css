@@ -570,6 +570,7 @@ footer{
     
     .about-text{
         height: 10vw;
+        margin-top: -5%;
     }
 
     .practice-list{
@@ -702,3 +703,4 @@ footer{
         border-top: #dce0e5 2px solid;
     }
 }
+
