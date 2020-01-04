@@ -566,11 +566,13 @@ footer{
 
     .about-wrapper{
         height: 100%;
+        border-bottom: 1px solid grey;
     }
     
     .about-text{
         height: 10vw;
         margin-top: -8%;
+
     }
 
     .practice-list{
