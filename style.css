@@ -680,6 +680,10 @@ footer{
         font-size: 2vw;
     }
     
+    .footer-container p{ 
+        margin: 10%;
+    }
+
     .footer-container ul li{
         list-style: none;
     }
