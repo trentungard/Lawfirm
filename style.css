@@ -1,17 +1,18 @@
 
 h1{
-    font-size: 3vw;
+    font-size: 2.3vw;
+    font-family: 'Cinzel', serif;
 }
 
 h2{
     font-size: 3vw;
-    font-family: 'Bitter', serif;
     color: #01161e;
+    
 }
 
 p{
     line-height: 130%;
-    font-family: 'Bitter', sans-serif;
+    font-family: 'Sulpher Point', sans-serif;
 }
 
 /* Head*/
@@ -24,7 +25,6 @@ header{
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-family: 'Scope One', serif;
     height: 130%;
 }
     /* TOP NAV */
@@ -185,7 +185,6 @@ header{
 
 .main-body{
     background-color: #efefef;
-    font-family: 'Sulpher Point', sans-serif;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 0%;
@@ -475,12 +474,17 @@ footer{
     border-top: #dce0e5 2px solid;
 }
 
+.disclaimer{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 /* MEDIA QUERIES*/
 
 @media(max-width: 600px) {
 
     h1{
-        font-size: 4vw;
+        font-size: 2.6vw;
     }
 
     p{
@@ -570,7 +574,6 @@ footer{
     
     .about-text{
         height: 10vw;
-        margin-top: -8%;
 
     }
 
@@ -607,7 +610,7 @@ footer{
         width: 90%;
         margin-left: 5%;
         justify-items: center;
-        height: 50vw;
+        height: 55vw;
     }
 
     .contact-wrapper br{
@@ -681,7 +684,7 @@ footer{
     }
     
     .footer-container p{ 
-        margin: 10%;
+        margin: 3%;
     }
 
     .footer-container ul li{
@@ -708,8 +711,9 @@ footer{
         text-align: center;
         background-color: black;
         color: white;
-        margin-bottom: -4%;
+        margin-bottom: 0%;
         border-top: #dce0e5 2px solid;
+        height: 300px;
     }
 }
 
