@@ -573,6 +573,7 @@ footer{
     }
     
     .about-text{
+        margin-top: 5%;
         height: 10vw;
 
     }
@@ -610,7 +611,8 @@ footer{
         width: 90%;
         margin-left: 5%;
         justify-items: center;
-        height: 55vw;
+        height: 60vw;
+        padding-bottom: 5%;
     }
 
     .contact-wrapper br{
