@@ -1,18 +1,25 @@
 
 h1{
-    font-size: 2.3vw;
+    font-size: 1.9em;
     font-family: 'Cinzel', serif;
 }
 
 h2{
-    font-size: 3vw;
+    font-size: 2.3em;
     color: #01161e;
+    font-family: 'Roboto Slab', serif;
     
+}
+
+h3{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.15em;
 }
 
 p{
     line-height: 130%;
     font-family: 'Sulpher Point', sans-serif;
+    font-size: 1em;
 }
 
 /* Head*/
@@ -86,7 +93,8 @@ header{
     height: 50%;
     width: 100%;
     margin-top: 1%;
-    margin-left: -5%;
+    padding-left: 8%;
+    font-family: 'Roboto Slab', serif;
 }
 
 .nav-part-3 ul li{
@@ -230,7 +238,7 @@ header{
 }
 
 .practice-item{
-
+    
 }
 
 .practice-emblems{
@@ -255,6 +263,13 @@ header{
     width: 50%;
     font-size: 1.5vw;
     text-align: center;
+    font-family: 'Sulpher Point', sans-serif;
+}
+
+.practiice-list ul li:hover{
+    cursor: pointer;
+    text-emphasis: underline;
+    color: blue;
 }
 
 .practice-list ul li{
@@ -271,6 +286,7 @@ header{
     width: 50%;
     margin-left: 0%;
     font-size: 1.2vw;
+    font-family: 'Sulpher Point', sans-serif;
 }
 
 .practice-list-2 ul {
