@@ -738,3 +738,14 @@ footer{
     }
 }
 
+@media(min-width: 1910px){
+    .main-body{
+        background-color: #efefef;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 0%;
+        width: 70%;
+        font-size: 1.25vw;
+        margin-top: 3%;
+    }
+}
